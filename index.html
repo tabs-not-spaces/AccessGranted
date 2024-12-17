@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Access Granted</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/dracula-ui@1.0.3/styles/dracula-ui.css" />
     <style>
         body {
-            background-color: #121212;
+            background-color: #1d1d1d;
             color: white;
             display: flex;
             flex-direction: column;
@@ -18,16 +20,20 @@
             text-align: center;
             font-family: 'Roboto', sans-serif;
         }
+
         h1 {
             font-size: 96px;
         }
+
         p {
             font-size: 40px;
         }
+
         img {
             max-width: 100%;
             height: auto;
         }
+
         button {
             background: none;
             border: none;
@@ -36,11 +42,28 @@
             cursor: pointer;
             text-decoration: underline;
         }
+        .contentbg {
+            background-color: #121212;
+            box-shadow: 10px 12px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
     </style>
 </head>
+
 <body>
-    <h1>Access Granted.</h1>
-    <img src="img/accessGranted.webp" alt="Access Granted">
-    <button onclick="window.close()">You can close this tab</button>
+    <div class="contentbg">
+        <h1 class="drac-heading drac-heading-2xl drac-text-purple-cyan">Access Granted</h1>
+        <img src="img/accessGranted.webp" alt="Access Granted">
+        <p class="drac-text drac-text-pink">
+            Go get yourself a treat for being so smart
+            </br>When you get back you can close this window
+        </br>💖🍺
+        </p>
+    </div>
+
 </body>
+
 </html>
+
